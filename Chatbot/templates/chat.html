@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- jQuery & Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" data-navbar>
+    <div class="navbar-container">
+        <a href="#" class="logo">Vikram Betaal</a>
+    
+        <!-- Section Website -->
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="http://127.0.0.1:5500/index.html" class="navbar-link" data-navbar-link>Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="http://127.0.0.1:5500/WebAboutUs/about.html" class="navbar-link" data-navbar-link>About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/Comics Page/comics.html" class="navbar-link" data-navbar-link>Comics</a>
+            </li>
+            <li class="navbar-item">
+                <a href="/WebContactPage/Contact.html" class="navbar-link" data-navbar-link>Contact Us</a>
+            </li>
+            <li class="navbar-item">
+                <a href="http://127.0.0.1:5000" class="navbar-link" data-navbar-link>Chat</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <!-- Chatbot container -->
+  <div class="container-fluid h-100">
+    <div class="row justify-content-center h-100">
+      <div class="col-md-8 col-xl-6 chat">
+        <div class="card">
+          <div class="card-header msg_head">
+            <div class="d-flex bd-highlight">
+              <div class="img_cont">
+                <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img" />
+                <span class="online_icon"></span>
+              </div>
+              <div class="user_info">
+                <span>ChatBot</span>
+                <p>Ask me anything!</p>
+              </div>
+            </div>
+          </div>
+          <div id="messageFormeight" class="card-body msg_card_body"></div>
+          <div class="card-footer">
+            <form id="messageArea" class="input-group">
+              <input
+                type="text"
+                id="text"
+                name="msg"
+                placeholder="Type your message..."
+                autocomplete="off"
+                class="form-control type_msg"
+                required
+              />
+              <div class="input-group-append">
+                <button type="submit" id="send" class="input-group-text send_btn">
+                  <i class="fas fa-location-arrow"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>

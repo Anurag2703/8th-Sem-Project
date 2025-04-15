@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+}
+
+.background-overlay {
+    background: url('https://i.ytimg.com/vi/AnNfZTpt1Qo/maxresdefault.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+
+.about-section {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #000000;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.member-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #e3963e;
+}
+
+.member-card h2 {
+  font-size: 20px;
+  color: #e3963e;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  font-size: 14px;
+  color: #444;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="/WebContactPage/static/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" data-navbar>
+      <div class="navbar-container">
+          <a href="#" class="logo">Vikram Betaal</a>
+      
+          <!-- Section Website -->
+          <ul class="navbar-list">
+              <li class="navbar-item">
+                  <a href="/index.html" class="navbar-link" data-navbar-link>Home</a>
+              </li>
+              <li class="navbar-item">
+                  <a href="/WebAboutUs/about.html" class="navbar-link" data-navbar-link>About</a>
+              </li>
+              <li class="navbar-item">
+                  <a href="/Comics Page/comics.html" class="navbar-link" data-navbar-link>Comics</a>
+              </li>
+              <li class="navbar-item">
+                  <a href="/WebContactPage/Contact.html" class="navbar-link" data-navbar-link>Contact Us</a>
+              </li>
+              <li class="navbar-item">
+                  <a href="http://127.0.0.1:5000" class="navbar-link" data-navbar-link>Chat</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- <img src="/Media/AI.jpg" alt=""> -->
+    <div class="overlay">
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">KIIT University, Bhubaneswar,</div>
+              <div class="text-two">Odisha, India</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91 123456789</div>
+              <div class="text-two">+91 123456789</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">anurag@gmail.com</div>
+              <div class="text-two">ankit@gmail.com</div>
+              <div class="text-three">prajnabrata@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any query, kindly contact us by filling the form.</p>
+            <form action="http://127.0.0.1:8000/submit" method="post">
+              <div class="input-box">
+                <input type="text" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <input type="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box message-box">
+                <textarea name="message" placeholder="Enter your message" required></textarea>
+              </div>
+              <div class="button">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
+

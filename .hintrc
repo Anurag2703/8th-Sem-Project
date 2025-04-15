@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "no-inline-styles": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off",
+        "button-name": "off"
+      }
+    ],
+    "disown-opener": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter"
+        ]
+      }
+    ],
+    "no-protocol-relative-urls": "off",
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off",
+        "frame-title": "off"
+      }
+    ]
+  }
+}

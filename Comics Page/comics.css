@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('/Media/VB.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.blur {
+    filter: blur(5px); /* Apply blur effect */
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.glass-container {
+    margin: 80px auto 40px auto;
+    padding: 2rem;
+    max-width: 990px; /* 👈 Made container wider */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+
+    display: grid; /* 👈 Display cards in grid */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive font size */
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+.card {
+    width: 14rem !important; /* 👈 Make cards smaller */
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: bolder;
+    font-size: large;
+    color: black;
+    text-align: center;
+}
+
+
+
+/* PAGINATION */
+.pagination-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.pagination .page-link {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagination .page-link:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #000;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}

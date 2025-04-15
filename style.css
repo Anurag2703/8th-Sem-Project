@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure video stays behind everything */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0; /* Remove left/right padding here */
+    display: flex;
+    justify-content: center; /* Center inner container */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1400px; /* Optional: restrict max width */
+    padding: 0 40px; /* 👈 Padding on both sides */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar a.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: filter 0.3s ease;
+}
+
+.blur {
+    filter: blur(5px); /* Apply blur effect */
+}
+
+/* Main Line */
+.main-line {
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the element */
+    text-align: center; /* Align text center */
+}
+
+.main-line h1 {
+    font-size: 100px; /* Set font size to large */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    outline: black;
+    transform: translateY(-30px); /* 👈 This moves the h1 upwards */
+}
+
+.line {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%; /* Start from the middle */
+    top: 90px;
+    border-radius: 10px;
+    border: 3.7px solid #fff;
+    animation: expandLine 5s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes expandLine {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 150px; /* Expand to both sides equally */
+        left: calc(50% - 75px); /* Adjust left position */
+    }
+    100% {
+        width: 300px; /* Expand to the full length */
+        left: calc(50% - 150px); /* Adjust left position */
+    }
+}
+
+.main-line p {
+    position: relative;
+    top: -30px; /* Adjust as needed to move the paragraph up */
+    font-family: 'Dancing Script', cursive; /* Apply 'Dancing Script' font */
+    color: #fff; /* Set text color */
+    font-size: 24px; /* Set font size */
+}
