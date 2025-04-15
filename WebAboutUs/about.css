@@ -19,8 +19,45 @@ body, html {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive behavior below 600px */
+@media screen and (max-width: 600px) {
+  .navbar-list {
+      position: absolute;
+      top: 70px;
+      right: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      border-radius: 12px;
+      display: none; /* Hidden by default */
   }
-  
+
+  .navbar-list.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .navbar-item {
+      margin-left: 0;
+  }
+}    
 
 .about-section {
   -webkit-backdrop-filter: blur(12px);

@@ -15,3 +15,14 @@ navbarLinks.forEach(link => {
         });
     });
 });
+
+
+// HAM BURGER MENU
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navbarList = document.getElementById('navbar-list');
+
+    hamburger.addEventListener('click', () => {
+        navbarList.classList.toggle('active');
+    });
+});
