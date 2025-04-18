@@ -174,3 +174,26 @@ body {
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bolder;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+footer .text-muted {
+    color: #fff !important;
+}
+footer .nav {
+    margin-bottom: 0 !important;
+}
+footer p {
+    margin-bottom: 0 !important;
+}

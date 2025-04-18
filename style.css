@@ -157,3 +157,32 @@ body, html {
     color: #fff; /* Set text color */
     font-size: 24px; /* Set font size */
 }
+
+
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bolder;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+footer .text-muted {
+    color: #fff !important;
+}
+
+footer .nav {
+    margin-bottom: 0 !important;
+}
+
+footer p {
+    margin-bottom: 0 !important;
+}
