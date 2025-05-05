@@ -16,7 +16,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-PDF_FOLDER = Path("/Comics Page/COMICS")
+# Use relative path based on project structure
+PDF_FOLDER = Path("Comics Page/COMICS")
 
 @app.post("/add-comment/")
 def add_comment(story_id: int = Form(...), comment: str = Form(...)):
@@ -31,7 +32,6 @@ def add_comment(story_id: int = Form(...), comment: str = Form(...)):
         writer.add_page(page)
 
     # Create a new page with the comment
-    # from PyPDF2.pdf import PageObject
     from reportlab.pdfgen import canvas
     from reportlab.lib.pagesizes import letter
     import io
